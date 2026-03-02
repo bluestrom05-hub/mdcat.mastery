@@ -1,0 +1,28 @@
+{
+  "name": "Subject",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Subject name (Physics, Chemistry, Biology, English, Logical Reasoning)"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon identifier for the subject"
+    },
+    "color": {
+      "type": "string",
+      "description": "Theme color for the subject"
+    },
+    "description": {
+      "type": "string"
+    },
+    "order": {
+      "type": "number",
+      "description": "Display order"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
