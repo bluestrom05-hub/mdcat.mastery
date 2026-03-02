@@ -1,0 +1,35 @@
+{
+  "name": "PastPaper",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    },
+    "board_id": {
+      "type": "string"
+    },
+    "subject_id": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "default": 60
+    },
+    "total_marks": {
+      "type": "number"
+    },
+    "mcq_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "title",
+    "year"
+  ]
+}
