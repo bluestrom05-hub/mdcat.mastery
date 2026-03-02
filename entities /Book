@@ -1,0 +1,40 @@
+{
+  "name": "Book",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Book title"
+    },
+    "subject_id": {
+      "type": "string",
+      "description": "Reference to Subject"
+    },
+    "board_id": {
+      "type": "string",
+      "description": "Reference to Board"
+    },
+    "class_id": {
+      "type": "string",
+      "description": "Reference to Class"
+    },
+    "chapters_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of chapters (max 15)"
+    },
+    "total_mcqs": {
+      "type": "number",
+      "default": 0
+    },
+    "cover_image": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "subject_id",
+    "board_id",
+    "class_id"
+  ]
+}
