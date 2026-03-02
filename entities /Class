@@ -1,0 +1,16 @@
+{
+  "name": "Class",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Class name (Class 11, Class 12)"
+    },
+    "order": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
