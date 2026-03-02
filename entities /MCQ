@@ -1,0 +1,62 @@
+{
+  "name": "MCQ",
+  "type": "object",
+  "properties": {
+    "chapter_id": {
+      "type": "string",
+      "description": "Reference to Chapter"
+    },
+    "question": {
+      "type": "string",
+      "description": "The question text"
+    },
+    "option_a": {
+      "type": "string"
+    },
+    "option_b": {
+      "type": "string"
+    },
+    "option_c": {
+      "type": "string"
+    },
+    "option_d": {
+      "type": "string"
+    },
+    "correct_answer": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "The correct option"
+    },
+    "explanation": {
+      "type": "string",
+      "description": "Explanation for the answer"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Easy",
+        "Medium",
+        "Hard"
+      ],
+      "default": "Medium"
+    },
+    "marks": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "required": [
+    "chapter_id",
+    "question",
+    "option_a",
+    "option_b",
+    "option_c",
+    "option_d",
+    "correct_answer"
+  ]
+}
