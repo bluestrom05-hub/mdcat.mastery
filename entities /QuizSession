@@ -1,0 +1,53 @@
+{
+  "name": "QuizSession",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "chapter_id": {
+      "type": "string"
+    },
+    "subject_name": {
+      "type": "string"
+    },
+    "total_questions": {
+      "type": "number"
+    },
+    "correct_answers": {
+      "type": "number"
+    },
+    "wrong_answers": {
+      "type": "number"
+    },
+    "score": {
+      "type": "number"
+    },
+    "accuracy": {
+      "type": "number"
+    },
+    "time_taken": {
+      "type": "number",
+      "description": "Time in seconds"
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to show on leaderboard"
+    },
+    "week_number": {
+      "type": "number"
+    },
+    "month_number": {
+      "type": "number"
+    },
+    "year": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_id",
+    "total_questions",
+    "score"
+  ]
+}
