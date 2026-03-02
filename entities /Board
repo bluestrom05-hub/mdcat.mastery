@@ -1,0 +1,17 @@
+{
+  "name": "Board",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Board name (KPK, Federal, Punjab)"
+    },
+    "code": {
+      "type": "string",
+      "description": "Short code for the board"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
