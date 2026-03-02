@@ -1,0 +1,31 @@
+{
+  "name": "Chapter",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Chapter title"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Reference to Book"
+    },
+    "chapter_number": {
+      "type": "number",
+      "description": "Chapter order (1-15)"
+    },
+    "mcq_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of MCQs (max 280)"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "book_id",
+    "chapter_number"
+  ]
+}
